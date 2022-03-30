@@ -1,0 +1,34 @@
+<resources>
+    <string name="app_name">DiabeticDiray</string>
+    <string name="list">List</string>
+    <string name="graphs">Graphs</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="input_your_sugar_here">Input your sugar here</string>
+    <string name="input_your_insulin_here">Input your insulin here</string>
+    <string name="save">Save</string>
+    <string name="add_your_note_here">Add your note here</string>
+    <string name="add">Add</string>
+    <string name="delete_all">Delete All</string>
+    <string name="delete">Delete</string>
+    <string name="your_sugar">Your sugar</string>
+    <string name="date">Date</string>
+    <string name="your_insulin">Your insulin</string>
+    <string name="add_test_data">Add Test Data</string>
+    <string name="statistics">Statistics</string>
+    <string name="itemNote">Note :</string>
+    <string name="textViewPlug">TextView</string>
+    <string name="itemInsulin">insulin :</string>
+    <string name="itemSugar">sugar :</string>
+    <string name="graphDate">Date</string>
+    <string name="graphPoint">Point</string>
+    <string name="Max">Max</string>
+    <string name="Avg">Avg</string>
+    <string name="Min">Min</string>
+    <string name="Week">Week</string>
+    <string name="Month">Month</string>
+    <string name="Quater">Quater</string>
+    <string name="Year">Year</string>
+    <string name="insulinamount">InsulinAmount</string>
+    <string name="NewNote">+NewNote</string>
+</resources>
