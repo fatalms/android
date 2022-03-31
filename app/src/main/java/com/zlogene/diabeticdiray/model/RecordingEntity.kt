@@ -15,7 +15,6 @@ data class RecordingEntity(
     var recordingId: Long = 0L,
 
     @ColumnInfo(name = "date")
-    // in unix time DDDDDDDDDD
     var date: Long,
 
     @ColumnInfo(name = "sugar")

@@ -11,9 +11,6 @@
         android:label="List"
         tools:layout="@layout/fragment_list">
         <action
-            android:id="@+id/action_listFragment_to_detailFragment"
-            app:destination="@id/detailFragment" />
-        <action
             android:id="@+id/action_listFragment_to_addRecordFragment"
             app:destination="@id/addRecordFragment" />
     </fragment>
@@ -22,18 +19,6 @@
         android:name="com.zlogene.diabeticdiray.ui.screen.graph.GraphFragment"
         android:label="Graphs"
         tools:layout="@layout/fragment_graph" />
-    <fragment
-        android:id="@+id/detailFragment"
-        android:name="com.zlogene.diabeticdiray.ui.screen.list.detail.DetailFragment"
-        android:label="Detail"
-        tools:layout="@layout/fragment_detail" >
-        <action
-            android:id="@+id/action_detailFragment_to_listFragment"
-            app:destination="@id/listFragment" />
-        <argument
-            android:name="currentItem"
-            app:argType="com.zlogene.diabeticdiray.model.RecordingEntity" />
-    </fragment>
     <fragment
         android:id="@+id/addRecordFragment"
         android:name="com.zlogene.diabeticdiray.ui.screen.addrecord.AddRecordFragment"
