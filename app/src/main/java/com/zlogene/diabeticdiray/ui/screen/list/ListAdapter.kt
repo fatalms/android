@@ -52,11 +52,6 @@ class ListAdapter : RecyclerView.Adapter<ListAdapter.ListViewHolder>() {
         val currentRecording = recordings[position]
         // полученный экземпляр записываем в textViews
         holder.bind(currentRecording)
-        // Redirect on detail fragment
-        holder.itemView.setOnClickListener {
-            val action = ListFragmentDirections.actionListFragmentToDetailFragment(recordings[position])
-            it.findNavController().navigate(action)
-        }
     }
 
     override fun getItemCount(): Int {

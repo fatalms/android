@@ -27,7 +27,6 @@ class AddRecordFragment : Fragment() {
         savedInstanceState: Bundle?
     ): View {
 
-        // Create viewModel
         val application = requireNotNull(this.activity).application
         val dao = RecordingDatabase.getInstance(application).getRecordingDatabaseDao()
         val viewModelFactory = AddRecordViewModelFactory(dao, application)
@@ -38,7 +37,6 @@ class AddRecordFragment : Fragment() {
             layoutInflater, container, false
         )
 
-        // Set Action bar Menu
         setHasOptionsMenu(true)
 
         return binding!!.root
@@ -48,7 +46,7 @@ class AddRecordFragment : Fragment() {
         var flag = false
         try {
             if (binding!!.sugarEditText.text.toString().isNotEmpty() &&
-                binding!!.insulinEditText.text.toString().isNotEmpty()&&
+                binding!!.insulinEditText.text.toString().isNotEmpty() &&
                 binding!!.sugarEditText.text.toString().toFloatOrNull()?.equals(null) == false &&
                 binding!!.insulinEditText.text.toString().toFloatOrNull()?.equals(null) == false
             ) {
@@ -56,8 +54,7 @@ class AddRecordFragment : Fragment() {
             }
         } catch (e: Exception) {
             Toast.makeText(context, "Incorrect input", Toast.LENGTH_SHORT).show()
-        }
-        finally {
+        } finally {
             return flag
         }
     }

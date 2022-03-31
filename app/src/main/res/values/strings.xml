@@ -31,4 +31,5 @@
     <string name="Year">Year</string>
     <string name="insulinamount">InsulinAmount</string>
     <string name="NewNote">+NewNote</string>
+    <string name="SugarLevel">SugarLevel</string>
 </resources>
